@@ -1,69 +1,72 @@
-body {
-	padding: 0;
+* {
 	margin: 0;
-	font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+	padding: 0;
+	box-sizing: border-box;
 }
-
-header {
+body {
+	font-family: Arial, Helvetica, sans-serif;
+}
+#container {
 	display: flex;
-	justify-content: space-around;
 }
 
-header > h1 {
-	text-align: center;
-	font-size: 2em;
-	position: absolute;
-	top: 1em;
-	left: 20em;
-	color: navy;
-}
-
-
-.section_one {
+.container_body {
 	display: flex;
-	justify-content: space-around;
-	margin: 10em 0 5em 0;
-	padding: 4em 0 2em 0;
-	height: 8em;
-	flex-grow: 1;
-	background-color: blue;
+	flex-direction: column;
+	margin: 0 auto;
+}
+.container_body h2 {
+	align-self: center;
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+
+.sidebar {
+	background-color: #5800ff;
+	flex-basis: 300px;
+	height: 789px;
 	color: #fff;
+	font-size: 20px;
+	padding: 10px;
+	display: flex;
+	flex-flow: column nowrap;
+	justify-content: space-evenly;
+}
+.container_box {
+	background-color: #f1f1f1;
+	width: 600px;
+	height: 500px;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	flex-direction: column;
+	box-shadow: 1px 1px 10px #fff;
+}
+
+.chart_box {
+	width: 600px;
+	height: 100px;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
 	
 }
 
-.item_outline {
+.chart_box h2 {
 	display: flex;
-	justify-content: space-around;
-	width: 100px;
+	background-color: #5800ff;
+	height: 120px;
+	width: 150px;
+	align-items: center;
+	justify-content: center;
+	color: #fff;
+	font-size: 30px;
+	font-weight: bold;
+	box-shadow: 1px 2px 5px black;
 }
 
-.item_outline > h2 {
-	color: rgb(113, 113, 228);
-}
-
-.card_body {
-	display: flex;
-	justify-content: space-around;
-	margin: 2em;
-}
-.card {
-	background-color: #e0e0f5;
-	width: 20em;
-    height: 25em;
-    
-}
-
-.card > h2 {
-    text-align: center;
-}
-.card > p {
-    padding-left: 4em;
-}
-.card:first-child {
-    margin-top: 1em;
-}
-
-.section_three{
-    display: flex;
-    justify-content: space-around;
+a {
+	cursor: pointer;
+	color: #fff;
+	text-decoration: none;
 }
