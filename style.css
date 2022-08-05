@@ -1,72 +1,89 @@
+/*Default styles*/
 * {
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
 }
+
 body {
-	font-family: Arial, Helvetica, sans-serif;
-}
-#container {
-	display: flex;
-}
-
-.container_body {
-	display: flex;
-	flex-direction: column;
-	margin: 0 auto;
-}
-.container_body h2 {
-	align-self: center;
-	margin-top: 20px;
-	margin-bottom: 20px;
-}
-
-.sidebar {
-	background-color: #5800ff;
-	flex-basis: 300px;
-	height: 789px;
-	color: #fff;
-	font-size: 20px;
-	padding: 10px;
-	display: flex;
-	flex-flow: column nowrap;
-	justify-content: space-evenly;
-}
-.container_box {
 	background-color: #f1f1f1;
-	width: 600px;
-	height: 500px;
+	font-family: Arial, Helvetica, sans-serif;
 	display: flex;
-	justify-content: space-around;
-	align-items: center;
-	flex-direction: column;
-	box-shadow: 1px 1px 10px #fff;
-}
-
-.chart_box {
-	width: 600px;
-	height: 100px;
-	display: flex;
-	justify-content: space-around;
-	align-items: center;
-	
-}
-
-.chart_box h2 {
-	display: flex;
-	background-color: #5800ff;
-	height: 120px;
-	width: 150px;
-	align-items: center;
-	justify-content: center;
-	color: #fff;
-	font-size: 30px;
-	font-weight: bold;
-	box-shadow: 1px 2px 5px black;
 }
 
 a {
-	cursor: pointer;
-	color: #fff;
 	text-decoration: none;
+	font-size: 25px;
+	font-weight: bolder;
+	font-variant: small-caps;
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+	cursor: pointer;
 }
+
+.sidebar_container {
+	background-color: #5800ff;
+	flex-basis: 350px;
+	height: 900px;
+	padding: 2em 0em 0em 3em;
+}
+.sidebar_li {
+	list-style: none;
+	padding: 15px 0;
+}
+.sidebar_item {
+	color: #f1f1f1;
+}
+
+.sidebar_ul {
+	display: flex;
+	flex-direction: column;
+}
+
+.main_container {
+	display: flex;
+	flex-direction: column;
+	flex-grow: 1;
+}
+
+.header_container {
+	background-color: #e2dcc8;
+	align-self: center;
+	margin-top: 60px;
+	width: 900px;
+	height: 350px;
+	box-shadow: 0px 0px 4px #e2dcc8;
+	border-radius: 20px;
+	padding-bottom: 26em;
+}
+
+.section_box {
+	display: flex;
+	justify-content: space-evenly;
+	padding-bottom: 40px;
+
+}
+
+.section_box h1 {
+	background-color: #5800ff;
+	width: 150px;
+	height: 100px;
+	border-radius: 5px;
+	text-align: center;
+	padding-top: 30px;
+	color: #f1f1f1;
+	box-shadow: 0px 0px 4px #e2dcc8;
+}
+
+.main_container h1 {
+	align-self: center;
+	margin-top: 60px;
+	font-family: Georgia, "Times New Roman", Times, serif;
+}
+
+.card {
+	display: flex;
+	justify-content: space-evenly;
+	
+}
+
+
